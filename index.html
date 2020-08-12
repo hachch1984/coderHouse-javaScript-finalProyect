@@ -8,6 +8,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
     <title>Index</title>
 </head>
@@ -67,66 +68,99 @@
         <section class="row no-gutters">
             <section class="col-md-8">
                 <div class="border"></div>
-                <div class="input-1 ">
-                    <img src="./images/icon1.png" alt="">
-                    <p>¿Cuánto dinero necesitas?</p>
-                    <input type="range" name="" id="">
-                    <input type="text" name="" id="">
+                <div class="d-flex justify-content-between align-items-center ">
+                    <img class="m-4" src="./images/icon1.png" alt="">
+                    <div class="d-flex justify-content-between w-100" >
+                        <p class="text-style-1 ">¿Cuanto dinero<br/> necesitas?</p>
+                        <input  class="w-50 mr-5"  type="range" name="" id="">
+                        
+                    </div>
+                    <div class="control-1">
+                        <input class="input-text-1  " type="text" name="" id="">
+                    </div>
+
                 </div>
                 <div class="border"></div>
-                <div class="input-1 ">
-                    <img src="./images/icon2.png" alt="">
-                    <p>¿En cuántos meses quieres devolverlo?</p>
-                    <input type="range" name="" id="">
-                    <input type="text" name="" id="">
+                <div class="d-flex justify-content-between align-items-center ">
+                    <img class="m-4" src="./images/icon2.png" alt="">
+                    <div class="d-flex justify-content-between w-100" >
+                        <p class="text-style-1 ">¿En cuantos meses<br/> quieres devolberlo?</p>
+                        <input  class="w-50 mr-5"  type="range" name="" id="">
+                        
+                    </div>
+                    <div class="control-1">
+                        <input class="input-text-1  " type="text" name="" id="">
+                    </div>
+
+                </div>
+
+                <div class="border"></div>
+                <div class="d-flex justify-content-between align-items-center">
+                    <img class="m-4" src="./images/icon3.png" alt="">
+                    <div>
+                        <p class="text-style-1">¿Deseas protegerte contratando el Seguro de Protección de Préstamos?
+                        </p>
+                        <p class="text-style-2 ">Fallecimiento por enfermedad o accidente, invalidez permanente
+                            absoluta, desempleo e
+                            Incapacidad temporal.</p>
+                    </div>
+                    <div class="control-1">
+                        <input     type="checkbox" name="" id="">
+                    </div>
+
                 </div>
                 <div class="border"></div>
-                <div class="input-2">
-                    <img src="./images/icon3.png" alt="">
-                    <p>¿Deseas protegerte contratando el Seguro de Protección de Préstamos?
-                        <small>Fallecimiento por enfermedad o accidente, invalidez permanente absoluta, desempleo e
-                            Incapacidad temporal.</small>
+                <div class="d-flex justify-content-between align-items-center">
+                    <img class="m-4" src="./images/icon4.png" alt="">
+                    <p class="flex-grow-1 text-style-1">¿Eres cliente del banco?
                     </p>
-                    <input type="text" name="" id="">
-                </div>
-                <div class="border"></div>
-                <div class="input-2 ">
-                    <img src="./images/icon4.png" alt="">
-                    <p>¿Eres cliente del Banco Santander?</p>
-                    <input type="text" name="" id="">
+                    <div class="control-1">
+                        <input   type="checkbox" name="" id="">
+                    </div>
                 </div>
                 <div class="border"></div>
 
             </section>
 
-            <section class="col-md-4">
+            <section class="mt-2 mt-md-0 col-md-4 ">
 
                 <div class="monthly-fee ml-4 ">
                     <div class="d-flex flex-column align-items-center">
                         <h6>Tu cuota mensual</h6>
                         <h2>126.36</h2>
                     </div>
-                    <p class="monthly-fee-line"></p>
-                    <div class="monthly-fee-detail">
-                        <span>
-                            Comision de apertura financiada
-                        </span>
-                        <span>123.36</span>
-                    </div>
-                    <p class="monthly-fee-line"></p>
-                    <div class="monthly-fee-detail">
-                        <span>
-                            Tipo de interes nominal anual
-                        </span>
-                        <span>desde 7,95% TAE desde 9,11%</span>
-                    </div>
-                    <p class="monthly-fee-line"></p>
-                    <div class="monthly-fee-detail">
-                        <span>
-                            Importe total financiado
-                        </span>
-                        <span>6.135,00 €
-                        </span>
+                    <div>
+                        <p class="monthly-fee-line"></p>
+                        <div class="monthly-fee-detail">
+                            <p>
+                                Comision de apertura financiada
+                            </p>
+                            <p>
+                                123.36
+                            </p>
+                        </div>
+                        <p class="monthly-fee-line"></p>
+                        <div class="monthly-fee-detail">
+                            <p>
+                                Tipo de interes nominal anual
+                            </p>
+                            <p>
+                                <span>
+                                    desde 7,95% (TAE desde 9,11%)
+                                </span>
+                            </p>
+                        </div>
+                        <p class="monthly-fee-line"></p>
+                        <div class="monthly-fee-detail">
+                            <p>
+                                Importe total financiado
+                            </p>
+                            <p>
+                                6.135,00 €
+                            </p>
+                        </div>
+                        <p class="monthly-fee-line"></p>
+                        <a href="">Documentación necesaria y costes asociados</a>
                     </div>
                 </div>
 

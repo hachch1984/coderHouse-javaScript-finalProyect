@@ -83,88 +83,39 @@ a:hover {
   height: 10rem;
 }
 
-.input-1 {
+.control-1 {
+  width: 3rem;
+  height: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
 }
 
-.input-1 img {
-  width: 3rem;
-  height: 3rem;
+.control-1 :nth-child(1) {
+  margin: 2rem;
 }
 
-.input-1 p {
-  width: 11rem;
-  height: 2rem;
+.input-text-1 {
+  width: 2rem;
+}
+
+.text-style-1 {
   font-size: 1.1rem;
   font-weight: lighter;
   opacity: 0.8;
-  margin-left: 1rem;
-  text-align: left;
-  line-height: 1.3rem;
 }
 
-.input-1 input[type="range"] {
-  margin: 0 1rem;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-.input-1 input[type="text"] {
-  width: 5rem;
-  margin-top: 0.5rem;
-}
-
-.input-2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1rem;
-}
-
-.input-2 img {
-  width: 3rem;
-  height: 3rem;
-}
-
-.input-2 p {
-  padding-top: 0.5rem;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  font-size: 1.1rem;
-  font-weight: lighter;
-  opacity: 0.8;
-  margin-left: 1rem;
-  line-height: 1.3rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  height: 100%;
-}
-
-.input-2 p small {
-  margin-top: 0.3rem;
+.text-style-2 {
   font-size: 0.8rem;
   line-height: 0.8rem;
-}
-
-.input-2 input[type="text"] {
-  width: 5rem;
-  margin-top: 0.5rem;
+  font-weight: lighter;
+  opacity: 0.8;
 }
 
 .info {
@@ -175,11 +126,21 @@ a:hover {
 }
 
 .monthly-fee {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   height: 375px;
   -webkit-box-shadow: 5px 5px 26px -3px #a39da3;
           box-shadow: 5px 5px 26px -3px #a39da3;
   padding: 2rem 0 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .monthly-fee h6 {
@@ -187,14 +148,25 @@ a:hover {
 }
 
 .monthly-fee h2 {
+  margin-top: 2rem;
   color: #eb1515;
+  font-size: 3rem;
+}
+
+.monthly-fee a {
+  font-size: 0.7rem;
+  display: block;
+  text-align: center;
+  margin-top: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .monthly-fee-line {
   width: 80%;
   height: 1px;
-  background-color: #DDDDDD;
-  margin: 0.5rem auto;
+  background-color: #dddddd;
+  margin: 0 auto;
 }
 
 .monthly-fee-detail {
@@ -204,17 +176,37 @@ a:hover {
   padding: 0 1rem;
 }
 
-.monthly-fee-detail span {
+.monthly-fee-detail p {
+  padding: 0;
+  margin: 0;
   width: 50%;
+  height: 3rem;
   font-size: 0.7rem;
 }
 
-.monthly-fee-detail :nth-child(2) {
+.monthly-fee-detail :nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.monthly-fee-detail :nth-child(2) {
+  font-weight: bolder;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+
+.monthly-fee-detail :nth-child(2) span {
+  text-align: right;
 }
 /*# sourceMappingURL=index.css.map */

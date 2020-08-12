@@ -63,65 +63,32 @@ a {
 .banner-height {
   height: 10rem;
 }
-
-.input-1 {
+ 
+.control-1 {
+  width: 3rem;
+  height: 3rem;
   display: flex;
-  align-items: center;
-  padding: 1rem;
-  img {
-    width: 3rem;
-    height: 3rem;
-  }
-  p {
-    width: 11rem;
-    height: 2rem;
-    font-size: 1.1rem;
-    font-weight: lighter;
-    opacity: 0.8;
-    margin-left: 1rem;
-    text-align: left;
-    line-height: 1.3rem;
-  }
-  input[type="range"] {
-    margin: 0 1rem;
-    flex-grow: 1;
-  }
-  input[type="text"] {
-    width: 5rem;
-    margin-top: 0.5rem;
+  justify-content: center;
+  align-items: center; 
+  :nth-child(1)
+  {
+    margin: 2rem;
   }
 }
 
-.input-2 {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-  img {
-    width: 3rem;
-    height: 3rem;
-  }
-  p {
-    padding-top: 0.5rem;
-    flex-grow: 1;
-    font-size: 1.1rem;
-    font-weight: lighter;
-    opacity: 0.8;
-    margin-left: 1rem;
-    line-height: 1.3rem;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    small {
-      margin-top: 0.3rem;
-      font-size: 0.8rem;
-      line-height: 0.8rem;
-    }
-  }
-
-  input[type="text"] {
-    width: 5rem;
-    margin-top: 0.5rem;
-  }
+.input-text-1 {
+  width: 2rem;
+}
+.text-style-1 {
+  font-size: 1.1rem;
+  font-weight: lighter;
+  opacity: 0.8;
+}
+.text-style-2 {
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  font-weight: lighter;
+  opacity: 0.8;
 }
 
 .info {
@@ -132,40 +99,60 @@ a {
 }
 
 .monthly-fee {
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
   height: 375px;
-  box-shadow: 5px 5px 26px -3px rgba(163,157,163,1);
+  box-shadow: 5px 5px 26px -3px rgba(163, 157, 163, 1);
   padding: 2rem 0 2rem 0;
-  h6{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  h6 {
     font-weight: bolder;
-    
   }
-  h2{
+  h2 {
+    margin-top: 2rem;
     color: $color-red;
+    font-size: 3rem;
+  }
+  a {
+    font-size: 0.7rem;
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+    text-decoration: underline;
+    cursor: pointer;
   }
 }
-.monthly-fee-line{
+.monthly-fee-line {
   width: 80%;
   height: 1px;
-  background-color: #DDDDDD;
-  margin: 0.5rem auto;
- 
-
+  background-color: #dddddd;
+  margin: 0 auto;
 }
 .monthly-fee-detail {
   display: flex;
-  padding: 0 1rem ;
- 
-  span {
+  padding: 0 1rem;
+  p {
+    padding: 0;
+    margin: 0;
     width: 50%;
-    
+    height: 3rem;
     font-size: 0.7rem;
   }
   :nth-child(1) {
+    display: flex;
+    align-items: center;
   }
-  :nth-child(2) { 
-display: flex;
-justify-content: flex-end;
 
+  :nth-child(2) {
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    span {
+      text-align: right;
+    }
   }
 }
