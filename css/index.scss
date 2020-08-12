@@ -1,0 +1,171 @@
+$color-red: #eb1515;
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+html {
+  font-size: 16px;
+}
+.backgroun-color-red {
+  background-color: $color-red;
+}
+.color-red {
+  color: $color-red;
+}
+.color-white {
+  color: white;
+}
+.color-black {
+  color: #303030;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+* {
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  &:hover {
+    color: inherit;
+    text-decoration: inherit;
+    cursor: inherit;
+  }
+}
+.menu {
+  ul {
+    display: flex;
+    li {
+      font-size: 0.8rem;
+      height: 100px;
+      width: 90px;
+      color: white;
+      padding: 0 10px;
+      border-right: solid 1px white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: #cecece;
+        color: $color-red;
+        text-decoration: underline;
+      }
+    }
+    :nth-child(7) {
+      border-right: none;
+    }
+  }
+}
+.banner-height {
+  height: 10rem;
+}
+
+.input-1 {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  img {
+    width: 3rem;
+    height: 3rem;
+  }
+  p {
+    width: 11rem;
+    height: 2rem;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    opacity: 0.8;
+    margin-left: 1rem;
+    text-align: left;
+    line-height: 1.3rem;
+  }
+  input[type="range"] {
+    margin: 0 1rem;
+    flex-grow: 1;
+  }
+  input[type="text"] {
+    width: 5rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.input-2 {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  img {
+    width: 3rem;
+    height: 3rem;
+  }
+  p {
+    padding-top: 0.5rem;
+    flex-grow: 1;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    opacity: 0.8;
+    margin-left: 1rem;
+    line-height: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    small {
+      margin-top: 0.3rem;
+      font-size: 0.8rem;
+      line-height: 0.8rem;
+    }
+  }
+
+  input[type="text"] {
+    width: 5rem;
+    margin-top: 0.5rem;
+  }
+}
+
+.info {
+  opacity: 0.8;
+  font-size: 0.7rem;
+  line-height: 0.9rem;
+  margin-top: 2rem;
+}
+
+.monthly-fee {
+  background-color: #F8F8F8;
+  height: 375px;
+  box-shadow: 5px 5px 26px -3px rgba(163,157,163,1);
+  padding: 2rem 0 2rem 0;
+  h6{
+    font-weight: bolder;
+    
+  }
+  h2{
+    color: $color-red;
+  }
+}
+.monthly-fee-line{
+  width: 80%;
+  height: 1px;
+  background-color: #DDDDDD;
+  margin: 0.5rem auto;
+ 
+
+}
+.monthly-fee-detail {
+  display: flex;
+  padding: 0 1rem ;
+ 
+  span {
+    width: 50%;
+    
+    font-size: 0.7rem;
+  }
+  :nth-child(1) {
+  }
+  :nth-child(2) { 
+display: flex;
+justify-content: flex-end;
+
+  }
+}
