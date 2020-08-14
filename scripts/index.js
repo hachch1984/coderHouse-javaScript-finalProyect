@@ -6,7 +6,12 @@ class MonthlyFeeCalculator {
         this.TotalMonths = totalMonths;
     }
     GetMonthlyFee() {
-        return this.TotalMonths * this.TotalMoney;
+        let value = this.TotalMonths * this.TotalMoney;
+        return value + (value * 0.1);
     }
 }
+let obj = new MonthlyFeeCalculator(5000, 24);
+let str = 'Monto solicitado 5000 en 24 meses, valor cuota: ' + obj.GetMonthlyFee();
+console.log(str);
+alert(str);
 //# sourceMappingURL=index.js.map
