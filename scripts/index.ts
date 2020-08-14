@@ -6,8 +6,8 @@ class MonthlyFeeCalculator {
     this.TotalMonths = totalMonths;
   }
   GetMonthlyFee() {
-    let value= this.TotalMonths * this.TotalMoney;
- return value+ (value*0.1)
+    let value= this.TotalMoney / this.TotalMonths;
+ return    value+ (value*0.1)
   }
 }
 
