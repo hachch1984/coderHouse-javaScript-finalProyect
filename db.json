@@ -1,0 +1,14 @@
+{
+  "configuration": [
+    {
+      "id": 1,
+      "isClientPercentaje": 7.95,
+      "isNotClientePercentaje": 9.11,
+      "moneyMinValue": 100,
+      "moneyMaxValue": 20000,
+      "monthMinValue": 1,
+      "monthMaxValue": 48,
+      "reliefInsurance": 10
+    } 
+  ]
+}
